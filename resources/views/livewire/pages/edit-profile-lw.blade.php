@@ -41,7 +41,7 @@
             </div>
 
             <!-- Tombol Simpan -->
-            <section class="px-4 mt-5 mb-24">
+            <section class="mt-5 mb-24">
                 <button wire:click="logout"
                     class="w-full border border-alert-green text-alert-green font-semibold py-2 rounded-lg hover:bg-red-50 transition">
                     Simpan

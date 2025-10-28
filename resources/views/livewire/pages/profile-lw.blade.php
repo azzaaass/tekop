@@ -17,7 +17,9 @@
                         <p class="text-xs text-primary-chinese-black opacity-70">Ramadhaninarya@gmail.com</p>
                     </div>
                 </div>
-                <img src="{{ asset('images/icon/chevron-right.png') }}" alt="arrow" class="w-4 h-4">
+                <a href="{{ route('editProfile') }}">
+                    <img src="{{ asset('images/icon/chevron-right.png') }}" alt="arrow" class="w-4 h-4">
+                </a>
             </div>
         </section>
 
