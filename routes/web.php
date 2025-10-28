@@ -1,0 +1,25 @@
+<?php
+
+use App\Http\Controllers\AuthController;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// auth
+Route::get('/onBoard', \App\Livewire\Auth\OnBoard::class)->name('onBoard');
+Route::get('/login', \App\Livewire\Auth\Login::class)->name('login');
+Route::get('/signInNumber', \App\Livewire\Auth\SignInNumber::class)->name('signInNumber');
+Route::get('/otp', \App\Livewire\Auth\Otp::class)->name('otp');
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/home', \App\Livewire\Pages\HomeLw::class)->name('home');
+    Route::get('/menu', \App\Livewire\Pages\MenuLw::class)->name('menu');
+    Route::get('/product/{id}', \App\Livewire\Pages\ProductDetailLw::class)->name('product.detail');
+    Route::get('/favorite', \App\Livewire\Pages\FavoriteLw::class)->name('favorite');
+    Route::get('/pesanan', \App\Livewire\Pages\PesananLw::class)->name('pesanan');
+    Route::get('/profile', \App\Livewire\Pages\ProfileLw::class)->name('profile');
+    Route::get('/editProfile', \App\Livewire\Pages\EditProfileLw::class)->name('editProfile');
+});
