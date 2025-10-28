@@ -15,7 +15,7 @@
                 <p class="text-sm font-medium text-secondary-green-06">Snack</p>
             </div>
         </header>
-        <section class="overflow-x-scroll p-3">
+        <section class="overflow-x-scroll p-3 mb-6">
             @foreach ($products as $category => $productList)
                 <h1 class="mt-4 mb-2 text-2xl font-bold">{{ $category }}</h1>
                 <div class="w-full flex overflow-x-scroll gap-2">
