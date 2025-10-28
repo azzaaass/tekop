@@ -10,7 +10,7 @@
     @endif
 
     <!-- Gambar produk -->
-    <img src="{{ asset('images/product/' . $product['image']) }}" alt="{{ $product['name'] }}" class="pt-6 mx-auto">
+    <img src="{{ asset('images/product/' . $product['image']) }}" alt="{{ $product['name'] }}" class="pt-6 h-[130px] mx-auto">
 
     <!-- Nama & kategori -->
     @php
