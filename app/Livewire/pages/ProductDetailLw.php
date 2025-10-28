@@ -55,6 +55,7 @@ class ProductDetailLw extends Component
         }
 
         // Optional: kirim event notifikasi
+        redirect()->route('pesanan');
     }
 
     public function mount($id)
