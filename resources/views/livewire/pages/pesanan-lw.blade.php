@@ -33,28 +33,28 @@
                     <!-- Left: Image + Info -->
                     <div class="flex items-center gap-3 w-[75%]">
                         <img class="w-16 h-16 object-cover rounded-lg"
-                             src="{{ asset('images/product/' . $cart->product->image) }}" 
-                             alt="{{ $cart->product->name }}">
+                            src="{{ asset('images/product/' . $cart->product->image) }}"
+                            alt="{{ $cart->product->name }}">
                         <div class="flex-1">
                             <p class="font-semibold text-primary-chinese-black">{{ $cart->product->name }}</p>
-                            <p class="text-sm text-primary-chinese-black">Rp {{ number_format($cart->product->price, 0, ',', '.') }}</p>
+                            <p class="text-sm text-primary-chinese-black">Rp
+                                {{ number_format($cart->product->price, 0, ',', '.') }}</p>
 
                             <!-- Counter -->
                             <div class="flex items-center gap-3 mt-2">
                                 <button wire:click="decrementQuantity({{ $cart->id }})"
-                                        class="w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full text-lg text-primary-verdigris">–</button>
-                                <span class="text-sm font-semibold text-primary-chinese-black">{{ $cart->quantity }}</span>
-                                <button wire:click="incrementQuantity({{ $cart->id }})" 
-                                        class="w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full text-lg text-primary-verdigris">+</button>
+                                    class="w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full text-lg text-primary-verdigris">–</button>
+                                <span
+                                    class="text-sm font-semibold text-primary-chinese-black">{{ $cart->quantity }}</span>
+                                <button wire:click="incrementQuantity({{ $cart->id }})"
+                                    class="w-6 h-6 flex items-center justify-center border border-gray-300 rounded-full text-lg text-primary-verdigris">+</button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Right: Delete icon -->
-                    <img src="{{ asset('images/icon/trash.png') }}" 
-                         alt="delete"
-                         wire:click="removeCart({{ $cart->id }})"
-                         class="cursor-pointer w-5 h-5">
+                    <img src="{{ asset('images/icon/trash.png') }}" alt="delete"
+                        wire:click="removeCart({{ $cart->id }})" class="cursor-pointer w-5 h-5">
                 </div>
             @endforeach
         </section>
@@ -67,9 +67,12 @@
                     Rp {{ number_format($total, 0, ',', '.') }}
                 </p>
             </div>
-            <button class="w-full bg-primary-verdigris text-white font-semibold py-2 rounded-lg hover:brightness-110 transition">
-                Checkout
-            </button>
+            <a href="{{ route('paymentMethod') }}">
+                <button
+                    class="w-full bg-primary-verdigris text-white font-semibold py-2 rounded-lg hover:brightness-110 transition">
+                    Checkout
+                </button>
+            </a>
         </footer>
     </livewire:layouts.bottom-nav-lw>
 </div>

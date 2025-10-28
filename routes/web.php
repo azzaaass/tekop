@@ -22,4 +22,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/pesanan', \App\Livewire\Pages\PesananLw::class)->name('pesanan');
     Route::get('/profile', \App\Livewire\Pages\ProfileLw::class)->name('profile');
     Route::get('/editProfile', \App\Livewire\Pages\EditProfileLw::class)->name('editProfile');
+
+    Route::get('/paymentMethod', \App\Livewire\Pages\PaymentMethodLw::class)->name('paymentMethod');
+    Route::get('/confirmPayment', \App\Livewire\Pages\ConfirmPaymentLw::class)->name('confirmPayment');
+    Route::get('/pinPayment', \App\Livewire\Pages\PinPaymentLw::class)->name('pinPayment');
+    Route::get('/paymentSuccess', \App\Livewire\Pages\PaymentSuccessLw::class)->name('paymentSuccess');
 });
