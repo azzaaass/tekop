@@ -1,5 +1,5 @@
 <div>
-    <livewire:layouts.bottom-nav-lw>
+    {{-- <livewire:layouts.bottom-nav-lw> --}}
         <!-- Header Kosong (biar center focus ke konten) -->
         <section class="flex flex-col items-center justify-center h-screen bg-white px-6">
 

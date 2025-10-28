@@ -1,5 +1,5 @@
 <div>
-    <livewire:layouts.bottom-nav-lw>
+    {{-- <livewire:layouts.bottom-nav-lw> --}}
         <header class="pt-3 pb-4 px-2 flex items-center gap-4 shadow-md">
             <!-- Tombol back -->
             <a href="{{ route('pesanan') }}">

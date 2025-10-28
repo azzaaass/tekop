@@ -1,5 +1,5 @@
 <div>
-    <livewire:layouts.bottom-nav-lw>
+    {{-- <livewire:layouts.bottom-nav-lw> --}}
         <!-- Header -->
         <header class="pt-4 pb-6 px-3 flex items-center gap-4">
             <a href="{{ route('confirmPayment') }}">
