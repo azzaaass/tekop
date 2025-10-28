@@ -3,11 +3,9 @@
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 // auth
+Route::get('/', \App\Livewire\Auth\OnBoard::class)->name('onBoard');
 Route::get('/onBoard', \App\Livewire\Auth\OnBoard::class)->name('onBoard');
 Route::get('/login', \App\Livewire\Auth\Login::class)->name('login');
 Route::get('/signInNumber', \App\Livewire\Auth\SignInNumber::class)->name('signInNumber');
