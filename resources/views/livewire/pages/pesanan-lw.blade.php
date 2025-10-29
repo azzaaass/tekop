@@ -1,12 +1,16 @@
 <div>
     <livewire:layouts.bottom-nav-lw>
         <!-- Header -->
-        <header class="pt-3 pb-4 px-2 flex items-center gap-4 shadow-md">
+        <header class="pt-3 pb-4 px-2 flex items-center justify-between gap-4 shadow-md">
             <!-- Tombol back -->
             <a href="{{ url()->previous() }}" class="">
                 <img src="{{ asset('images/icon/chevron-left.png') }}" alt="icon-left" class="w-[100%]">
             </a>
             <h2 class="text-2xl text-center font-bold text-primary-chinese-black">Pesanan</h2>
+            <a href="{{ route('history') }}" class="">
+                <img src="{{ asset('images/icon/history.png') }}" alt="icon-left" class="w-[100%]">
+            </a>
+
         </header>
 
         <!-- Info Delivery -->

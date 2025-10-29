@@ -51,7 +51,7 @@
             </div>
 
             <!-- Tombol Selesai -->
-            <a href="{{ route('pesanan') }}" class="fixed bottom-16 left-0 w-full px-4 pb-4 bg-white">
+            <a href="{{ route('history') }}" class="fixed bottom-16 left-0 w-full px-4 pb-4 bg-white">
                 <button
                     class="w-full max-w-sm mt-6 bg-primary-verdigris text-white font-semibold py-2 rounded-lg hover:opacity-90 transition">
                     Selesai

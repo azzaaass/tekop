@@ -25,4 +25,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/confirmPayment', \App\Livewire\Pages\ConfirmPaymentLw::class)->name('confirmPayment');
     Route::get('/pinPayment', \App\Livewire\Pages\PinPaymentLw::class)->name('pinPayment');
     Route::get('/paymentSuccess', \App\Livewire\Pages\PaymentSuccessLw::class)->name('paymentSuccess');
+
+    Route::get('/history', \App\Livewire\Pages\HistoryLw::class)->name('history');
 });
