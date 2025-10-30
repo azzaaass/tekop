@@ -28,11 +28,11 @@
             <span class="flex-shrink mx-4 text-xs text-primary-chinese-black">OR</span>
             <div class="flex-grow border-t border-gray-300"></div>
         </div>
-        <button
+        <a href="{{ route('signInNumber') }}"
             class="w-full flex items-center justify-center px-6 py-1.5  text-primary-verdigris border-2 border-primary-verdigris text-md rounded-xl shadow-lg">
             Sign In with number
-        </button>
-        <p class="pt-3 text-sm text-primary-chinese-black text-center">Don't have an account? <a href="#"
+        </a>
+        <p class="pt-3 text-sm text-primary-chinese-black text-center">Don't have an account? <a href="{{ route('register') }}"
                 class="text-primary-verdigris">Sign Up</a>.</p>
     </section>
 </div>

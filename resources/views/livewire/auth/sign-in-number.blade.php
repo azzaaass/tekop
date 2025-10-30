@@ -18,11 +18,10 @@
             </div>
         </div>
 
-        <button
-            class="mt-3 w-full flex items-center justify-center px-6 py-2 bg-primary-verdigris text-white text-md rounded-xl shadow-lg"
-            wire:click="signIn">
+        <a href="{{ route('otp') }}"
+            class="mt-3 w-full flex items-center justify-center px-6 py-2 bg-primary-verdigris text-white text-md rounded-xl shadow-lg">
             Continue
-        </button>
+        </a>
 
     </section>
 </div>

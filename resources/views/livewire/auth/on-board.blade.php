@@ -16,11 +16,13 @@
                 Sign In
             </button>
         </a>
-        <button
-            class="mt-3 w-full flex items-center justify-center px-6 py-1.5 text-primary-verdigris border-2 border-primary-verdigris text-md rounded-xl shadow-lg"
-            wire:click="signIn">
-            I’m new, sign me up
-        </button>
+
+        <a href="{{ route('register') }}">
+            <button
+                class="mt-3 w-full flex items-center justify-center px-6 py-1.5 text-primary-verdigris border-2 border-primary-verdigris text-md rounded-xl shadow-lg">
+                I’m new, sign me up
+            </button>
+        </a>
         <p class="pt-3 text-sm text-primary-chinese-black">By logging in or registering, you agree to our <a
                 href="#" class="text-primary-verdigris">Terms of service</a> and <a href="#"
                 class="text-primary-verdigris">Privacy policy</a>.</p>

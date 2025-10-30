@@ -5,11 +5,12 @@ use Illuminate\Support\Facades\Route;
 
 
 // auth
-Route::get('/', \App\Livewire\Auth\OnBoard::class)->name('onBoard');
+Route::get('/', \App\Livewire\Auth\Logo::class)->name('logo');
 Route::get('/onBoard', \App\Livewire\Auth\OnBoard::class)->name('onBoard');
 Route::get('/login', \App\Livewire\Auth\Login::class)->name('login');
 Route::get('/signInNumber', \App\Livewire\Auth\SignInNumber::class)->name('signInNumber');
 Route::get('/otp', \App\Livewire\Auth\Otp::class)->name('otp');
+Route::get('/register', \App\Livewire\Auth\Register::class)->name('register');
 
 
 Route::middleware('auth')->group(function () {
